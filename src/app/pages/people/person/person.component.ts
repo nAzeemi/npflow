@@ -15,13 +15,19 @@ export class PersonComponent {
   searchPerson() {
     this.searchResults = [
       {
+        Id: 'guid1',
         FirstName: 'Naveed',
         LastName: 'Ahmad',
       },
       {
+        Id: 'guid2',
         FirstName: 'Saima',
         LastName: 'Ahmad',
       },
     ];
+  }
+
+  editPerson(id: String) {
+    
   }
 }

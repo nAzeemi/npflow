@@ -22,7 +22,7 @@
             <tbody>
               <tr *ngFor="let person of searchResults">
                 <td>{{ person.FirstName }} {{ person.LastName }}</td>
-                <td></td>
+                <td><button class="btn btn-danger" (click)=editPerson(person.Id)>Edit</button></td>
               </tr>
             </tbody>
           </table>
