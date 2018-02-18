@@ -28,6 +28,5 @@ export class PersonComponent {
   }
 
   editPerson(id: String) {
-    
   }
 }
