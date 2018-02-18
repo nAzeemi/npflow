@@ -7,6 +7,12 @@ import { Component } from '@angular/core';
 })
 export class CheckInComponent {
 
+  programs = [
+    { title: 'Playgroup and Learn', time: new Date() },
+    { title: 'ESOL', time: new Date() },
+    { title: 'STEP', time: new Date() },
+  ];
+
   starRate = 2;
   heartRate = 4;
 }

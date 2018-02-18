@@ -1,15 +1,11 @@
 <div class="row">
-    <div class="col-lg-6">
+    <div class="col-lg-12" *ngFor="let program of programs">
       <nb-card>
-        <nb-card-header>Play and learn group</nb-card-header>
+        <nb-card-header>
+          <div class="program-title">{{ program.title }}</div>
+        </nb-card-header>
         <nb-card-body>
-          <h5>9:00 am - 10:00 am</h5>
-        </nb-card-body>
-      </nb-card>
-      <nb-card>
-        <nb-card-header>ESOL</nb-card-header>
-        <nb-card-body>
-          <h5>9:00 am - 11:00 am</h5>
+          <div class="program-time">{{ program.time | date:'h:mm a M/d/yyyy' }}</div>
         </nb-card-body>
       </nb-card>
     </div>
