@@ -10,7 +10,7 @@ export class PersonComponent {
   starRate = 2;
   heartRate = 4;
 
-  searchResults = []
+  searchResults = [];
 
   searchPerson() {
     this.searchResults = [
@@ -28,9 +28,10 @@ export class PersonComponent {
   }
 
   editPerson(id: string) {
-    window.confirm(id);
+    window.confirm("Editing person with id " + id);
   }
 
   addPerson() {
+    this.searchResults = [];
   }
 }
