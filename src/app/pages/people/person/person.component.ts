@@ -27,6 +27,7 @@ export class PersonComponent {
     ];
   }
 
-  editPerson(id: String) {
+  editPerson(id: string) {
+    window.confirm(id);
   }
 }
