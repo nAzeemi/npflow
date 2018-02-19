@@ -30,4 +30,7 @@ export class PersonComponent {
   editPerson(id: string) {
     window.confirm(id);
   }
+
+  addPerson() {
+  }
 }
