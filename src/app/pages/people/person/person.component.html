@@ -8,11 +8,13 @@
         <div class="input-group has-person-icon">
           <input type="text" class="form-control" placeholder="Person Name">
           <span class="input-group-btn">
-            <button type="button" class="btn btn-success btn-icon" (click)=searchPerson()>
+            <button type="button" class="btn btn-success btn-with-icon" (click)=searchPerson()>
                 <i class="nb-search"></i>
+                <span>Search</span>
             </button>
-            <button type="button" class="btn btn-outline-success btn-icon" (click)=addPerson()>
+            <button type="button" class="btn btn-outline-success btn-with-icon" (click)=addPerson()>
                 <i class="nb-plus"></i>
+                <span>New</span>
             </button>
           </span>
         </div>
@@ -36,6 +38,7 @@
             </tbody>
           </table>
         </div>
+        <div [hidden]="!showNoneFound">None found</div>
       </nb-card-body>
     </nb-card>
   </div>

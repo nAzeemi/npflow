@@ -11,8 +11,10 @@ export class PersonComponent {
   heartRate = 4;
 
   searchResults = [];
+  showNoneFound = false;
 
   searchPerson() {
+    this.showNoneFound = false;
     this.searchResults = [
       {
         Id: 'guid1',
@@ -25,6 +27,7 @@ export class PersonComponent {
         LastName: 'Ahmad',
       },
     ];
+    this.showNoneFound = this.searchResults.length == 0
   }
 
   editPerson(id: string) {
@@ -32,6 +35,7 @@ export class PersonComponent {
   }
 
   addPerson() {
+    this.showNoneFound = false;
     this.searchResults = [];
   }
 }
