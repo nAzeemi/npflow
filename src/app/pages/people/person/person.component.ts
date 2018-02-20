@@ -27,7 +27,7 @@ export class PersonComponent {
         LastName: 'Ahmad',
       },
     ];
-    this.showNoneFound = this.searchResults.length == 0
+    this.showNoneFound = this.searchResults.length === 0
   }
 
   editPerson(id: string) {
