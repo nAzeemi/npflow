@@ -31,7 +31,7 @@ export class PersonComponent {
   }
 
   editPerson(id: string) {
-    window.confirm("Editing person with id " + id);
+    window.confirm('Editing person with id ' + id);
   }
 
   addPerson() {
