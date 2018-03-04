@@ -12,9 +12,11 @@ export class PersonComponent {
 
   searchResults = [];
   showNoneFound = false;
+  showNewPerson = false;
 
   searchPerson() {
     this.showNoneFound = false;
+    this.showNewPerson = false;
     this.searchResults = [
       {
         Id: 'guid1',
@@ -37,5 +39,6 @@ export class PersonComponent {
   addPerson() {
     this.showNoneFound = false;
     this.searchResults = [];
+    this.showNewPerson = true;
   }
 }
