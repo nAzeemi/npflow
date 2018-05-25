@@ -22,8 +22,10 @@
           <table class="table table-bordered table-striped">
             <thead>
               <tr>
-                  <th></th>
+                  <th width="1%"></th>
                   <th>Name</th>
+                  <th>DOB</th>
+                  <th>Address</th>
               </tr>
             </thead>
             <tbody>
@@ -33,7 +35,13 @@
                     <i class="nb-edit"></i>
                   </button>
                 </td>
-                <td>{{ person.FirstName }} {{ person.LastName }}</td>
+                <td>{{ person.Name }}</td>
+                <td>{{ person.DateOfBirth.toDateString() }}</td>
+                <td>
+                  <div>{{ person.Address.Street1 }}</div>
+                  <div [hidden]="person.Address.Street2.length == 0">{{ person.Address.Street2 }}</div>
+                  <div>{{ person.Address.City }}, {{ person.Address.State }} {{ person.Address.Zip }}</div>
+                </td>
               </tr>
             </tbody>
           </table>
