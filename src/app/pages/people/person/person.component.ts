@@ -16,7 +16,7 @@ export class PersonComponent {
 
   searchPerson() {
     this.showNoneFound = false;
-    this.showNewPerson = false; 
+    this.showNewPerson = false;
     this.searchResults = [
       {
         Id: 'guid1',
@@ -28,7 +28,7 @@ export class PersonComponent {
           City: 'Medford',
           State: 'MA',
           Zip: '02155',
-        }
+        },
       },
       {
         Id: 'guid2',
@@ -40,7 +40,7 @@ export class PersonComponent {
           City: 'Medford',
           State: 'MA',
           Zip: '02155',
-        }
+        },
       },
     ];
     this.showNoneFound = this.searchResults.length === 0
